@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTWebView.m \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTWebView.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTView.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/CSSLayout/CSSLayout.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/CSSLayout/CSSMacros.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/kodyfwee/ReactProjects/What2Ware/node_modules/react-native/React/Views/UIView+React.h

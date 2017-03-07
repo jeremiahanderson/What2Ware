@@ -19,15 +19,20 @@ module.exports = function (response){
     // not good
     // var rain3h = response['rain']['3h']
     
+    //weatherInt will determine our final recommendation.
+    //We want to update it to account for things like humidity and wind chill as well, right now it's just the temperature
     var weatherInt = parseInt(mainTemp)
-    var whatToWear = ''
     //if (humidity > 85){weatherInt = weatherInt+5}
-    if (parseInt(wind) > 6){weatherInt = weatherInt-10}
+    //if (parseInt(wind) > 6){weatherInt = weatherInt-10}
 
-    if(weatherInt < 55){whatToWear = "Way to fucking cold.\nWear a god damn jacket you cold ass piece of dumb shit duck"}
-    if(weatherInt >= 55 && weatherInt < 70){whatToWear = "Hoodie weeeeeather babies"}
-    if(weatherInt >= 70 && weatherInt < 80){whatToWear = "Jeans and a shirt. Plaid is in"} 
-    if(weatherInt >= 80) {whatToWear = "Shirts or/and shorts"}
+    //For Debugging
+    var whatToWear = "Temp: " + weatherInt + "\n"
+
+    if(weatherInt <= 35){whatToWear += "We'd go with some heavy clothes and a warm jacket."}
+    if(weatherInt > 35 && weatherInt < 50){whatToWear += "Sweater weather, never better. \nYou might want a medium jacket as well."}
+    if(weatherInt >= 50 && weatherInt < 69){whatToWear += "Hoodie weather baby. Jeans and a long sleeve would cut it."} 
+    if (weatherInt > 69 && weatherInt < 80){whatToWear += "Summer vibes. T-shirt and jeans or shorts today."}
+    if(weatherInt >= 80) {whatToWear += "Probably wear as few clothes as is socially acceptable."}
 
     return whatToWear
 }

@@ -18,27 +18,30 @@ export default class What2Ware extends Component {
     state = {  
         personsLatitude: 'unknown',
         personsLongitude: 'unknown',
-        weather: 'unkown',
-        ip: 'unkown',
-        fun: '',
+        apiCall: 'unknown',
+        weather: 'unknown',
+        whatToWear: '',
     };
     
     componentDidMount() {
+        
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 var personsLatitude = position.coords.latitude.toFixed(0)
                 var personsLongitude = position.coords.longitude.toFixed(0)
                 this.setState({personsLatitude});
                 this.setState({personsLongitude});
-                var ip = "http://api.openweathermap.org/data/2.5/weather?lat=" + this.state.personsLatitude + "&lon=" + this.state.personsLongitude + "&APPID=" + apiKey
-                this.setState({ip});
-                fetch(this.state.ip)
+                
+                var apiCall = "http://api.openweathermap.org/data/2.5/weather?lat=" + this.state.personsLatitude 
+                	+ "&lon=" + this.state.personsLongitude + "&APPID=" + apiKey
+                this.setState({apiCall});
+                fetch(this.state.apiCall)
                 .then((response) => response.json())
                 .then((responseJson) => {
                     var weather = responseJson
                     this.setState({weather});
-                    var fun = getWeather(weather)
-                    this.setState({fun});
+                    var whatToWear = getWeather(weather)
+                    this.setState({whatToWear});
                 })
                 .catch((error) => {
                     console.error(error);
@@ -53,7 +56,7 @@ export default class What2Ware extends Component {
         return (
             <Image source={require('./images/niceBlue.jpg')} style={styles.container}>
               <Text style = {styles.bigblue} >
-              {((this.state.fun))}
+              {((this.state.whatToWear))}
               </Text>
             </Image>            
         );
